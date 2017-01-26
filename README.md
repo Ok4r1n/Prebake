@@ -1,6 +1,8 @@
 Prebake
 =======
 
+[![Join the chat at https://gitter.im/liamja/Prebake](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/liamja/Prebake?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A set of Adblock filters to block obtrusive EU cookie law notices.
 
 Details
@@ -22,10 +24,14 @@ Contribute
 There are going to be sites that I have missed, or I may have just
 screwed up with a CSS selector. In any case, feel free to point out
 bugs or request new sites to be added via the [GitHub issue tracker](https://github.com/liamja/Prebake/issues),
-or submit a pull request.
+or [submit a pull request](https://github.com/liamja/Prebake/compare).
+Please make sure to test the site without any other AdBlock rules or
+content blockers, using the most recent version of the Prebake ruleset
+before reporting bugs.
 
-Run update.rb or move to `.git/hooks/pre-commit` to update the
-'last modified' time stamp when committing.
+When adding a new filter, keep the list sorted and
+update the `last modified` timestamp to match the current date.
+Please also make sure you don't introduce duplicate rules: [Redundancy check for Adblock Plus rules](https://arestwo.org/famlam/redundantRuleChecker.html).
 
 User Agreement
 --------------
@@ -37,22 +43,27 @@ set cookies.
 Only use these filters if you understand the implications of
 allowing cookies.
 
-Released Under WTFPL
---------------------
+License
+-------
 
-                DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-                        Version 2, December 2004
-                        
-     Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
-     
-     Everyone is permitted to copy and distribute verbatim or modified
-     copies of this license document, and changing it is allowed as long
-     as the name is changed.
-     
-                DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-       TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
-       
-      0. You just DO WHAT THE FUCK YOU WANT TO.
-      
+The MIT License (MIT)
 
-:)
+Copyright (c) 2015 Liam Anderson, Prebake Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
